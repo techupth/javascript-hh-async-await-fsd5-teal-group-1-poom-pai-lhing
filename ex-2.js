@@ -13,3 +13,10 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+function success(data) {
+  console.log(data);
+}
+function error(error) {
+  console.log(error);
+}
+getJohnProfile().then(success).catch(error);
